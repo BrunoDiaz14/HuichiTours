@@ -1,0 +1,52 @@
+:root {
+  --coral: #FF6F61;
+  --golden-yellow: #F6BF61;
+  --aqua: #22B6A1;
+  --terracota: #B2684B;
+  --cream: #F2E4C7;
+  --opal: #228C82;
+  --earth: #8B4222;
+}
+
+body {
+  background-color: var(--cream);
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background: linear-gradient(90deg, var(--coral), var(--opal));
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#clima {
+  background-color: var(--aqua);
+  border-radius: 20px;
+  width: 80%;
+  margin: auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  color: white;
+  padding: 2rem;
+}
+
+#infoClima img {
+  width: 100px;
+}
+
+#map {
+  height: 500px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+footer {
+  background-color: var(--earth);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  padding: 1rem;
+}
+
+#btnExplorar:hover {
+  opacity: 0.85;
+}
