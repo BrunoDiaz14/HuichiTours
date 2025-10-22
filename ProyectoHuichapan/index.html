@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HUICHITOUR - Ruta Querétaro–Huichapan</title>
+
+  <!-- 🌵 Icono de la página -->
+  <link rel="icon" type="image/png" href="img/IconoHuchiTours.ico">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Iconos de Bootstrap -->
+  <link rel="stylesheet" href="icon/bootstrap-icons-1.13.1/bootstrap-icons.css">
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-o9N1j+Qo9j8qN3C3q4Q1HwlWz38cshGZozXv+d0C6vA=" crossorigin=""></script>
+
+<!-- Script del mapa -->
+<script src="js/leaflet-ruta.js"></script>
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- jQuery -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="text-center p-4 text-white">
+    <h1 class="fw-bold">Ruta Turística Querétaro–Huichapan</h1>
+    <p>Explora cultura, historia y experiencias únicas 🌄</p>
+  </header>
+
+  <!-- Sección de bienvenida -->
+  <section class="container text-center my-5">
+    <h2 class="fw-bold text-uppercase mb-3" style="color: var(--earth);">Bienvenido</h2>
+    <p class="lead">Sumérgete en una experiencia digital que conecta tradición, naturaleza y tecnología.</p>
+    <button id="btnExplorar" class="btn btn-lg text-white" style="background-color: var(--coral);">
+      Explorar ahora
+    </button>
+  </section>
+
+  <!-- Sección del clima -->
+  <section id="clima" class="p-5 text-center">
+    <h2 class="fw-bold mb-3 text-uppercase">Clima en tiempo real</h2>
+    <div id="infoClima" class="fs-5 text-dark">
+      <p>Cargando clima...</p>
+    </div>
+  </section>
+
+  <!-- Sección del mapa con Leaflet -->
+  <section id="mapaRuta" class="container my-5">
+    <h2 class="fw-bold text-center mb-3 text-uppercase" style="color: var(--earth);">
+      Mapa de Ruta Huichapan – Querétaro
+    </h2>
+    <div id="map"></div>
+  </section>
+
+  <!-- 🛍️ Sección de comercios locales -->
+  <section id="comercios" class="container my-5">
+    <h2 class="text-center fw-bold text-uppercase mb-4" style="color: var(--earth);">Comercios Locales</h2>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="img/pulque.jpg" class="card-img-top" alt="Pulquería El Magueyal">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pulquería El Magueyal</h5>
+            <p class="card-text">Prueba el tradicional pulque de maguey con historia y sabor local.</p>
+            <button class="btn text-white" style="background-color: var(--opal);" onclick="mostrarPromo('Pulquería El Magueyal', '2x1 en jarros artesanales los viernes')">
+              Ver Promoción
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="img/artesanias.jpg" class="card-img-top" alt="Artesanías La Casona">
+          <div class="card-body text-center">
+            <h5 class="card-title">Artesanías La Casona</h5>
+            <p class="card-text">Tienda local con recuerdos, textiles y piezas únicas hechas a mano.</p>
+            <button class="btn text-white" style="background-color: var(--opal);" onclick="mostrarPromo('Artesanías La Casona', '15% de descuento en productos de talavera')">
+              Ver Promoción
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="img/cafeteria.jpg" class="card-img-top" alt="Café del Centro">
+          <div class="card-body text-center">
+            <h5 class="card-title">Café del Centro</h5>
+            <p class="card-text">Ambiente cálido con bebidas locales y pan artesanal de la región.</p>
+            <button class="btn text-white" style="background-color: var(--opal);" onclick="mostrarPromo('Café del Centro', 'Café gratis en tu segunda visita ☕')">
+              Ver Promoción
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-white p-3 mt-5">
+    <p>© 2025 Proyecto Innovación Turística - Huichapan</p>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-o9N1j+Qo9j8qN3C3q4Q1HwlWz38cshGZozXv+d0C6vA=" crossorigin=""></script>
+
+  <!-- Scripts personalizados -->
+  <script src="js/script.js"></script>
+  <script src="js/leaflet-ruta.js"></script>
+</body>
+</html>
